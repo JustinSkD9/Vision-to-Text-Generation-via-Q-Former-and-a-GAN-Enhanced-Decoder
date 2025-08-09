@@ -1,0 +1,5 @@
+rouge-score
+bert-score
+evaluate
+pycocotools
+sentencepiece
