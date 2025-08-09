@@ -7,11 +7,16 @@ from models.qformer import QFormerEncoder
     
 
 # Load history.json
-history_path = os.path.join(os.path.dirname(__file__), 'history.json')
+history_path = os.path.join(os.path.dirname(__file__), 'training_history.json')
 with open(history_path, 'r') as f:
     history = json.load(f)
 
 # Plot the training history
-plot_history(history)
+plot_history(history, 'Without GAN')
 
+history_path = os.path.join(os.path.dirname(__file__), 'training_history_gan.json')
+with open(history_path, 'r') as f:
+    history = json.load(f)
 
+# Plot the training history
+plot_history(history, 'With GAN')

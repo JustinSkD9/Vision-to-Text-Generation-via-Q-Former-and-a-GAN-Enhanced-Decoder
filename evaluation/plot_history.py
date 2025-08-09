@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 
-def plot_history(history):
+def plot_history(history, title):
     """
     input:
     {
@@ -21,7 +21,7 @@ def plot_history(history):
         plt.text(i, v, f"{v:.3f}", ha='center', va='bottom', fontsize=8)
     plt.xlabel('Epoch')
     plt.ylabel('Loss')
-    plt.title('Validation Loss over Epochs')
+    plt.title(title + ' - Validation Loss over Epochs')
     plt.grid(True)
     plt.legend()
     plt.show()
@@ -38,7 +38,7 @@ def plot_history(history):
 
     plt.xlabel('Epoch')
     plt.ylabel('Score')
-    plt.title('Evaluation Metrics over Epochs')
+    plt.title(title + 'Evaluation Metrics over Epochs')
     plt.legend()
     plt.grid(True)
     plt.show()
