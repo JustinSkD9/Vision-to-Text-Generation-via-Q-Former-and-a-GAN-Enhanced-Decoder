@@ -16,7 +16,7 @@
 3. Run prepare_dataset.py to download and prepare the Dataset subset (using MS-COCO 2017 training set)
 ```bash
 python prepare_dataset.py
-```
+
 options:
   -h, --help            show this help message and exit    
   --regenerate          Force regenerate dataset even if   
@@ -24,11 +24,11 @@ options:
   --subset-size SUBSET_SIZE
                         Number of images in the subset     
                         (default: 10000)
-
+```
 4. Run main.py to train, and display some examples at the end.
 ```bash
 python main.py
-```
+
 options:
   -h, --help            show this help message and exit
   --use-gan             Enable GAN training after supervised training
@@ -43,7 +43,7 @@ options:
   --warmup-epochs WARMUP_EPOCHS
                         Number of warmup epochs (T5 frozen)
   --examples EXAMPLES   Number of examples to generate
-
+```
 5. Run prepare_datase.py to display the loss and metrics plots over epoches.
 ```bash
 python prepare_dataset.py
