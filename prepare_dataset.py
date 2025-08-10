@@ -13,7 +13,7 @@ from collections import defaultdict
 # Parse command line arguments
 parser = argparse.ArgumentParser(description='Prepare COCO dataset subset')
 parser.add_argument('--regenerate', action='store_true', default=False,
-                    help='Force regenerate dataset even if it exists')
+                    help='to regenerate dataset (use if the dataset subset size change)')
 parser.add_argument('--subset-size', type=int, default=10000,
                     help='Number of images in the subset (default: 10000)')
 

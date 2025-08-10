@@ -19,8 +19,7 @@
 
     options:
     -h, --help            show this help message and exit    
-    --regenerate          Force regenerate dataset even if   
-                            it exists
+    --regenerate          to regenerate dataset (use if the dataset subset size change) 
     --subset-size SUBSET_SIZE
                             Number of images in the subset     
                             (default: 10000)
