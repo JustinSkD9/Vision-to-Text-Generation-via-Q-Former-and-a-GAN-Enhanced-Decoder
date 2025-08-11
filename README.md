@@ -32,7 +32,7 @@
     -h, --help            show this help message and exit
     --use-gan             Enable GAN training after supervised training
     --skip-supervised     Skip supervised training (use existing checkpoint)
-    --re-extract          Re-extract CLIP features
+    --re-extract          Re-extract CLIP features (will extract for the first time if features do not exist)
     --checkpoint          Load existing supervised checkpoint if available
     --gan-checkpoint      Load existing GAN checkpoint if available
     --supervised-epochs SUPERVISED_EPOCHS
