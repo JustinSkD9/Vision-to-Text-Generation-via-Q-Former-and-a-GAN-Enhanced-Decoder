@@ -43,7 +43,9 @@
                             Number of warmup epochs (T5 frozen)
     --examples EXAMPLES   Number of examples to generate
     ```
-5. Run prepare_datase.py to display the loss and metrics plots over epoches.
+5. Run evaluate_results.py to display the loss and metrics plots over epoches.
     ```bash
-    python prepare_dataset.py
+    python evaluate_results.py
     ```
+
+Our original code is running on Colab: https://colab.research.google.com/drive/1QKE3Ewu_1y1bNDsivN2WhwqjM2Tca5Bn#scrollTo=wCDLiup65EXB
