@@ -1,7 +1,7 @@
 import torch
 
 def load_checkpoint(path, qformer, decoder, optimizer=None, device="cuda"):
-    checkpoint = torch.load(path, map_location=device)
+    checkpoint = torch.load(path, map_location=device, weights_only=False)
     qformer.load_state_dict(checkpoint['qformer_state_dict'])
     decoder.load_state_dict(checkpoint['decoder_state_dict'])
     
@@ -15,7 +15,7 @@ def load_checkpoint(path, qformer, decoder, optimizer=None, device="cuda"):
     return epoch, best_bert
 
 def load_gan_checkpoint(path, qformer, decoder, discriminator, optimizer_G=None, optimizer_D=None, device="cuda"):
-    checkpoint = torch.load(path, map_location=device)
+    checkpoint = torch.load(path, map_location=device, weights_only=False)
     
     # Load model states
     qformer.load_state_dict(checkpoint['qformer_state_dict'])
