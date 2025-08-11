@@ -48,4 +48,4 @@
     python evaluate_results.py
     ```
 
-Our original code is running on Colab: https://colab.research.google.com/drive/1QKE3Ewu_1y1bNDsivN2WhwqjM2Tca5Bn#scrollTo=wCDLiup65EXB
+Our original code is running on Colab: https://colab.research.google.com/drive/1QKE3Ewu_1y1bNDsivN2WhwqjM2Tca5Bn
