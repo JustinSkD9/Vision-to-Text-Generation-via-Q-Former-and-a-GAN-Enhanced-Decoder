@@ -3,3 +3,11 @@ bert-score
 evaluate
 pycocotools
 sentencepiece
+torch
+torchvision
+transformers
+datasets
+tqdm
+pillow
+matplotlib
+nltk
